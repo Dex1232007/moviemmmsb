@@ -85,7 +85,7 @@ async def pm_text(bot, message):
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
-    curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+    curr_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
     if int(req) not in [query.from_user.id, 0]:
         return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     try:
@@ -211,7 +211,7 @@ async def next_page(bot, query):
                 ],
             )
     if not settings["button"]:
-        cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+        cur_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
         remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
         cap = await get_cap(settings, remaining_seconds, files, query, total, search)
@@ -314,7 +314,7 @@ async def years_cb_handler(client: Client, query: CallbackQuery):
 @Client.on_callback_query(filters.regex(r"^fy#"))
 async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
     _, lang, key = query.data.split("#")
-    curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+    curr_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
     search = FRESH.get(key)
     try:
         search = search.replace(' ', '_')
@@ -409,7 +409,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         btn.append([InlineKeyboardButton(text="↭ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ↭", callback_data=f"fy#homepage#{key}")])
     
     if not settings["button"]:
-        cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+        cur_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
         remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
         cap = await get_cap(settings, remaining_seconds, files, query, total_results, search)
@@ -480,7 +480,7 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
 @Client.on_callback_query(filters.regex(r"^fe#"))
 async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
     _, lang, key = query.data.split("#")
-    curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+    curr_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
     search = FRESH.get(key)
     try:
         search = search.replace(' ', '_')
@@ -575,7 +575,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         btn.append([InlineKeyboardButton(text="↭ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ↭", callback_data=f"fe#homepage#{key}")])
     
     if not settings["button"]:
-        cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+        cur_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
         remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
         cap = await get_cap(settings, remaining_seconds, files, query, total_results, search)
@@ -648,7 +648,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
 @Client.on_callback_query(filters.regex(r"^fl#"))
 async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     _, lang, key = query.data.split("#")
-    curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+    curr_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
     search = FRESH.get(key)
     try:
         search = search.replace(' ', '_')
@@ -743,7 +743,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.append([InlineKeyboardButton(text="↭ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ↭", callback_data=f"fl#homepage#{key}")])
     
     if not settings["button"]:
-        cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+        cur_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
         remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
         cap = await get_cap(settings, remaining_seconds, files, query, total_results, search)
@@ -816,7 +816,7 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
 @Client.on_callback_query(filters.regex(r"^fs#"))
 async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     _, seas, key = query.data.split("#")
-    curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+    curr_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
     search = FRESH.get(key)
     try:
         search = search.replace(' ', '_')
@@ -919,7 +919,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn.append([InlineKeyboardButton(text="↭ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ↭", callback_data=f"next_{req}_{key}_{offset}")])
     
     if not settings["button"]:
-        cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+        cur_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
         remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
         total_results = len(files)
@@ -1078,7 +1078,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn.append([InlineKeyboardButton(text="↭ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ↭", callback_data=f"next_{req}_{key}_{offset}")])
     
     if not settings["button"]:
-        cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+        cur_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
         remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
         total_results = len(files)
@@ -1102,7 +1102,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free_trial_status = await db.get_free_trial_status(user_id)
         if not free_trial_status:            
             await db.give_free_trail(user_id)
-            new_text = "**Yᴏᴜ Cᴀɴ Usᴇ Fʀᴇᴇ Tʀᴀɪʟ Fᴏʀ 5 Mɪɴᴜᴛᴇs Fʀᴏᴍ Nᴏᴡ 😀\n\nआप अब से 5 मिनट के लिए निःशुल्क ट्रायल का उपयोग कर सकते हैं 😀**"        
+            new_text = "**Yᴏᴜ Cᴀɴ Usᴇ Fʀᴇᴇ Tʀᴀɪʟ Fᴏʀ 5 Mɪɴᴜᴛᴇs Fʀᴏᴍ Nᴏᴡ 😀😀**"        
             await query.message.edit_text(text=new_text)
             return
         else:
@@ -1942,7 +1942,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('˹ υᴘᴅᴧᴛєs ˼', url="https://t.me/LKFilmBotss")
+            InlineKeyboardButton('˹ υᴘᴅᴧᴛєs ˼', url="https://t.me/movie_mmsb")
         ],[
             InlineKeyboardButton('⌯ ʜᴏᴍᴇ ⌯', callback_data='start'),
             InlineKeyboardButton('⌯ ᴄʟσsє ⌯', callback_data='close_data')
@@ -2209,7 +2209,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "tele":
         btn = [[
             InlineKeyboardButton(" ⌯ ʙᴧᴄᴋ ⌯", callback_data="help"),
-            InlineKeyboardButton("⌯ ᴄᴏɴᴛᴀᴄᴛ ⌯", url="telegram.me/nenobots")
+            InlineKeyboardButton("⌯ ᴄᴏɴᴛᴀᴄᴛ ⌯", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2250,7 +2250,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "share":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="help"),
-            InlineKeyboardButton(" ⌯ ᴄᴏɴᴛᴀᴄᴛ ⌯", url="telegram.me/nenobots")
+            InlineKeyboardButton(" ⌯ ᴄᴏɴᴛᴀᴄᴛ ⌯", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2266,7 +2266,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "song":
         btn = [[
             InlineKeyboardButton(" ⌯ ʙᴧᴄᴋ ⌯", callback_data="help"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2307,7 +2307,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "sticker":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="help"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2323,7 +2323,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "tamil_info":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2339,7 +2339,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "english_info":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2355,7 +2355,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "hindi_info":
         btn = [[
             InlineKeyboardButton(" ⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2371,7 +2371,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "telugu_info":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2387,7 +2387,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "malayalam_info":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2403,7 +2403,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "urdu_info":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2419,7 +2419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "bangladesh_info":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2435,7 +2435,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "kannada_info":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2451,7 +2451,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "gujarati_info":
         btn = [[
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="start"),
-            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/nenobots")
+            InlineKeyboardButton("📞 Cᴏɴᴛᴀᴄᴛ", url="telegram.me/itachiXCoder")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2542,7 +2542,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     await query.answer(MSG_ALRT)
 
 async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
-    curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+    curr_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
     if not spoll:
         message = msg
         if message.text.startswith("/"): return  # ignore commands
@@ -2639,7 +2639,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0])['file_name']) if settings["imdb"] else None
-    cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
+    cur_time = datetime.now(pytz.timezone('Asia/Yangon')).time()
     time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
     remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
     TEMPLATE = script.IMDB_TEMPLATE_TXT
