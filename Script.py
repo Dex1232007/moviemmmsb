@@ -8,7 +8,7 @@ class script(object):
 » ✦ ɪηʟɪηє sєᴧꝛᴄʜ sυᴘᴘσꝛᴛєᴅ
 » ✦ ᴘꝛєϻɪυϻ ғєᴧᴛυꝛєs
 •──────────────────────•
-❖ 𝐏ᴏᴡᴇʀᴇᴅ ʙʏ  »»  <a href=https://t.me/Cader_r>ʙᴊꜱ ᴄᴏᴅᴇʀ</a>  
+❖ 𝐏ᴏᴡᴇʀᴇᴅ ʙʏ  »»  <a href=https://t.me/itachiXCoder>ʙᴊꜱ ᴄᴏᴅᴇʀ</a>  
 •──────────────────────•</b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
@@ -32,9 +32,9 @@ class script(object):
 ● ɪ ʜᴧᴠє ᴘꝛєϻɪυϻ ғєᴧᴛυꝛєs
 ● ɪ ʜᴧᴠє ᴧɪ ɪηᴛєɢʀᴧᴛɪση
 ───────────────────────
-❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ ➥ <a href=https://t.me/LKFilmBotss>ʙᴏᴛs υᴘᴅᴧᴛє</a> 
-❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ <a href=https://t.me/LKFilm_Group>ʙᴏᴛs υᴘᴅᴧᴛє</a>
-❖ ʀєᴧʟ σᴡηєʀ ➥ <a href=https://t.me/Cader_r>ᴛʜᴀʀᴜsʜᴀ</a>
+❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ ➥ <a href=https://t.me/movie_mmsb>ʙᴏᴛs υᴘᴅᴧᴛє</a> 
+❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ <a href=https://t.me/moviemmsb_gp>ʙᴏᴛs υᴘᴅᴧᴛє</a>
+❖ ʀєᴧʟ σᴡηєʀ ➥ <a href=https://t.me/itachiXCoder>ᴛʜᴀʀᴜsʜᴀ</a>
 ───────────────────────
 ❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
     ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!
@@ -465,7 +465,7 @@ Cᴏᴍᴍᴀɴᴅꜱ: <b>
 
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code>
-🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
+🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Yangon</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 
     LOGO = """
