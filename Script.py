@@ -8,7 +8,7 @@ class script(object):
 » ✦ ɪηʟɪηє sєᴧꝛᴄʜ sυᴘᴘσꝛᴛєᴅ
 » ✦ ᴘꝛєϻɪυϻ ғєᴧᴛυꝛєs
 •──────────────────────•
-❖ 𝐏ᴏᴡᴇʀᴇᴅ ʙʏ  »»  <a href=https://t.me/itachiXCoder>ʙᴊꜱ ᴄᴏᴅᴇʀ</a>  
+❖ 𝐏ᴏᴡᴇʀᴇᴅ ʙʏ  »»  <a href=https://t.me/itachiXCoder>Owner</a>  
 •──────────────────────•</b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
@@ -34,7 +34,7 @@ class script(object):
 ───────────────────────
 ❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ ➥ <a href=https://t.me/movie_mmsb>ʙᴏᴛs υᴘᴅᴧᴛє</a> 
 ❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ <a href=https://t.me/moviemmsb_gp>ʙᴏᴛs υᴘᴅᴧᴛє</a>
-❖ ʀєᴧʟ σᴡηєʀ ➥ <a href=https://t.me/itachiXCoder>ᴛʜᴀʀᴜsʜᴀ</a>
+❖ ʀєᴧʟ σᴡηєʀ ➥ <a href=https://t.me/itachiXCoder>itachiXCoder</a>
 ───────────────────────
 ❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
     ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!
@@ -90,7 +90,7 @@ Bᴜʏ Pᴀɪᴅ Pʟᴀɴ - /plan</b>"""
 3. Bᴜᴛᴛᴏɴꜱ Sʜᴏᴜʟᴅ Bᴇ Pʀᴏᴘᴇʀʟʏ Pᴀʀꜱᴇᴅ Aꜱ Mᴀʀᴋᴅᴏᴡɴ Fᴏʀᴍᴀᴛ.</b>
 
 <b>Uʀʟ Bᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/ur_rishu_143)</code>
+<code>[Button Text](buttonurl:https://t.me/itachiXCoder)</code>
 <b>Aʟᴇʀᴛ Bᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:Tʜɪꜱ Iꜱ Aɴ Aʟᴇʀᴛ Mᴇꜱꜱᴀɢᴇ)</code>"""
 
