@@ -8,26 +8,26 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'Rishu_movie_bot')
-API_ID = int(environ.get('API_ID', '25265'))
-API_HASH = environ.get('API_HASH', 'd1af24bbfe438cae67372abf1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "764136AHaoksbJU1ik6Z20CIF3zw_6Boo")
+SESSION = environ.get('SESSION', 'moviemmsb')
+API_ID = int(environ.get('API_ID', '23955649'))
+API_HASH = environ.get('API_HASH', '18a8351080b6d3ca16b7b3dab448ab26')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7166005815:AAEhpk7q88-LkOduHObEnH5--Qx4eQW7Dr0")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'http://hoster.rf.gd/uploads/IMG_20250422_213251_429.jpg http://hoster.rf.gd/uploads/IMG_20250422_213254_511.jpg http://hoster.rf.gd/uploads/IMG_20250422_213258_028.jpg http://hoster.rf.gd/uploads/IMG_20250422_213315_114.jpg http://hoster.rf.gd/uploads/IMG_20250422_213325_339.jpg')).split()
+PICS = (environ.get('PICS', 'https://i.ibb.co/C9sFhtr/file-81.jpg https://i.ibb.co/1mtr09H/c24e4a18f99b.jpg https://i.ibb.co/JxDdHJk/672eaef5d850.jpg https://i.ibb.co/BPBnMB5/f2e00cc9d96c.jpg https://i.ibb.co/KWvn1qh/485a1bc99578.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1481322134').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6468293575').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6468293575').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002324418733'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002170497151'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002450577884').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002112046129').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -35,29 +35,29 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set Tru
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002456874247') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002112046129') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request File With command or hashtag like - /request or #request
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002325674931')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002170497151')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002332623930')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002207031842')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # This Channel Is For Index Request 
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 
 # This Channel Is For /batch command file store.
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '1002450577884')).split()]  # For Multiple Id Use One Space Between Each.
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002170497151')).split()]  # For Multiple Id Use One Space Between Each.
 
 # This Channel Is For Delete Index File, Forward Your File In This Channel Which You Want To Delete Then Bot Automatically Delete That File From Database.
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]  # For Multiple Id Use One Space Between Each.
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://priyangania010:olmNPdSrLitTh1KO@subsinhalabot.07vko.mongodb.net/?retryWrites=true&w=majority&appName=subsinhalabot")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://itachibot:Dex123dex@cluster0.ltylaaz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -82,14 +82,14 @@ PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b><blockquote>⍟───[ Aᴠᴀ
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
 CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "") # Necessary If clone mode is true
-PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
+PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'naruto20247') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/LKFilm_Group')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/LKFilmBotss')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LKFilm_Group') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Cader_r')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviemmsb_gp')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movie_mmsb')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviemmsb_gp') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/itachiXCoder')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -141,7 +141,16 @@ MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 
 # Choose Option Settings 
-LANGUAGES = ["malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
+# Choose Option Settings 
+LANGUAGES = [
+    "malayalam", "mal", 
+    "tamil", "tam",
+    "english", "eng", 
+    "hindi", "hin", 
+    "telugu", "tel", 
+    "kannada", "kan", 
+    "myanmar", "burmese", "mm", "မြန်မာ"
+]
 SEASONS = ["season 1", "season 2", "season 3", "season 4", "season 5", "season 6", "season 7", "season 8", "season 9", "season 10"]
 EPISODES = ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10", "E11", "E12", "E13", "E14", "E15", "E16", "E17", "E18", "E19", "E20", "E21", "E22", "E23", "E24", "E25", "E26", "E27", "E28", "E29", "E30", "E31", "E32", "E33", "E34", "E35", "E36", "E37", "E38", "E39", "E40"]
 QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
